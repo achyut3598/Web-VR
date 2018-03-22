@@ -1,0 +1,57 @@
+<html>
+<body>
+<style>
+.back {
+    width: 100%;
+    background-color: rgba(10,10,10,1);
+    height: 100%;
+}
+.div1 {
+    width: 300px;
+    background-color: grey;
+    border: 25px solid green;
+    padding: 35px;
+    margin-left: 39%;
+}
+</style>
+<div class="back">
+  <h1 style="text-align:center">Customize your Website</h1> <br><br>
+  <div class="div1">
+    <form action="reader.php" method="POST">
+    Number of Links <input name="link" type="text" value="">
+    <br><br>
+    Environment
+        <select name="Environment">
+        	<option value="none">None</option>
+        	<option value="forest">Forest</option>
+        	<option value="contact">Contact</option>
+        	<option value="egypt">Egypt</option>
+        	<option value="checkerboard">Checkerboard</option>
+        	<option value="goaland">Goaland</option>
+        	<option value="yavapai">Yavapai</option>
+        	<option value="goldmine">Goldmine</option>
+        	<option value="threetowers">Threetowers</option>
+        	<option value="poison">Poison</option>
+        	<option value="arches">Arches</option>
+        	<option value="tron">Tron</option>
+        	<option value="japan">Japan</option>
+        	<option value="dream">Dream</option>
+        	<option value="volcano">Volcano</option>
+        	<option value="starry">Starry</option>
+        	<option value="osiris">Osiris</option>
+        	</select>	
+        <br><br>
+     Number of Products <input name="Mids" type="text" value="">
+     <br><br>
+     Filename Model #1 <input name="Model1" type="text" value=""><br><br>
+     Filename Model #2 <input name="Model2" type="text" value=""><br><br>
+     Filename Model #3 <input name="Model3" type="text" value=""><br><br>
+     Filename Model #4 <input name="Model4" type="text" value=""><br><br>
+     Filename Model #5 <input name="Model5" type="text" value=""><br><br>
+     Text on Contact page <input type="textarea" name="contact" value=""><br><br>
+     <input type="submit" id="submit" value="Save Changes">
+    </form>
+</div>
+</div>
+</body>
+</html>

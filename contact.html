@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@3.2.5/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-randomizer-components@3.0.2/dist/aframe-randomizer-components.min.js"></script>
+    <script src="https://unpkg.com/aframe-entity-generator-component@3.0.1/dist/aframe-entity-generator-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+    <script>
+      window.addEventListener('vrdisplayactivate', function() {
+      info.textContent = 'Display activated.';
+      reportDisplays();
+      });
+    </script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="title" src="/assets/OpenSansRegular.json"></a-asset-item>
+        <img id="doge" crossorigin="true" src="/assets/420.jpg" />
+      </a-assets>
+    
+      <a-entity position="0 1 -1" 
+                scale=".05 .05 .05" 
+                text-geometry="font: #title;
+                bevelEnabled: false;
+                bevelSize: 0.01; 
+                bevelThickness: 0.05; 
+                curveSegments: 3; 
+                size: .5;
+                style: normal;
+                height: .1;
+                value: Axiom;"
+                material="color:#FFF; 
+                metalness: 0; roughness: 0; 
+                sphericalEnvMap: ;">        
+      </a-entity>
+      <a-entity position="0 1.5 1" link="on: click; href: about.html"></a-entity>
+      <a-entity light="color: #ccccff; intensity: .8; type: ambient;" visible=""></a-entity>
+      <a-sky color="#EEE"></a-sky>
+    </a-scene>
+  </body>
+</html>
